@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Forecast</title>
+  <%= stylesheet_link_tag 'style', media: 'all' %>
+  <script>
+    function validateForm(event) {
+      var address = document.getElementById("address").value.trim();
+      if (!address) {
+        alert("Please enter a city name or zip code.");
+        event.preventDefault(); // Prevent form submission
+        return false;
+      }
+      return true; // Allow form submission
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="forecast-form">
+      <%= form_with url: forecasts_path, method: :post, local: true, onsubmit: "return validateForm(event);" do |form| %>
+        <%= form.label :address, "Enter city name or Zip Code:" %>
+        <%= form.text_field :address, id: "address", placeholder: "e.g. Hyderabad or 500001" %>
+        <%= form.submit "Get Forecast" %>
+      <% end %>
+      <div class="footer-note">
+        <p>Find the forecast for any location by entering city name or zip code.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

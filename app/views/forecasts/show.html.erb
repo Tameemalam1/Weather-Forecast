@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <%= stylesheet_link_tag 'style', media: 'all' %>
+</head>
+<body>
+  <div class="container">
+    <div class="forecast-display">
+      <h1>Weather Forecast</h1>
+      <p><strong>City Name / Zipcode:</strong> <%= @address %></p>
+
+      <% if @cached %>
+        <p class="cached-note">Note: This data is cached and may be up to 30 minutes old.</p>
+      <% end %>
+
+      <% if @forecast_data %>
+        <p><strong>Current Temperature:</strong> <%= @forecast_data[:current_temp] %> °C</p>
+        <p><strong>High:</strong> <%= @forecast_data[:high_temp] %> °C</p>
+        <p><strong>Low:</strong> <%= @forecast_data[:low_temp] %> °C</p>
+        <p><strong>Weather Description:</strong> <%= @forecast_data[:weather_description] %></p>
+        <p><strong>City Name:</strong> <%= @forecast_data[:city_name] %></p>
+      <% else %>
+        <p>No forecast data available. Please try again.</p>
+      <% end %>
+    </div>
+  </div>
+</body>
+</html>
