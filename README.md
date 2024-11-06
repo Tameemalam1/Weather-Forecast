@@ -36,3 +36,4 @@ This is a simple Ruby on Rails application that provides weather forecast inform
 - Hyderabad or 500001
 - Pune or 411001
 - Ahmedabad or 380001
+"# Weather-Forecast" 

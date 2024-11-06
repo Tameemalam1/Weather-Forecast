@@ -1,0 +1,3228 @@
+Started GET "/" for 127.0.0.1 at 2024-11-05 16:19:11 +0530
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.7ms | Allocations: 470)
+Completed 200 OK in 87ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 3905)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 16:25:10 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 216)
+Completed 200 OK in 13ms (Views: 8.8ms | Allocations: 831)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 16:39:03 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.7.10/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 343)
+Completed 200 OK in 30ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2551)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 16:46:24 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 23.3ms | Allocations: 2155)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: eb8f7211d05732e19fe4
+Version: webpack 4.46.0
+Time: 78ms
+Built at: 05/11/2024 4:46:29 pm
+        Asset      Size  Chunks             Chunk Names
+manifest.json  23 bytes          [emitted]  
+
+ERROR in Entry module not found: Error: Can't resolve 'babel-loader' in 'C:\Users\tamee\ror\WeatherForecastApp'
+
+
+
+[1m[31mInsufficient number of arguments or no entry found.
+[1m[31mAlternatively, run 'webpack(-cli) --help' for usage info.[39m[22m
+
+
+  Rendered layout layouts/application.html.erb (Duration: 5521.0ms | Allocations: 22921)
+Completed 500 Internal Server Error in 5545ms (ActiveRecord: 0.0ms | Allocations: 25523)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/tamee/ror/WeatherForecastApp/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "entrypoints": {
+  }
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2024-11-05 16:54:27 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1862)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e55c805ed8f397fdbbe1
+Version: webpack 4.46.0
+Time: 174ms
+Built at: 05/11/2024 4:54:31 pm
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-82c61114f8c62e181738.js   8.44 KiB  application  [emitted] [immutable]  application
+js/application-82c61114f8c62e181738.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-82c61114f8c62e181738.js js/application-82c61114f8c62e181738.js.map
+[./app/javascript/packs/application.js] 4.55 KiB {application} [not cacheable] [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ../node_modules/babel-loader/lib/index.js):
+Error: Cannot find module '@babel/core'
+Require stack:
+- C:\Users\tamee\ror\node_modules\babel-loader\lib\index.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\loader-runner\lib\loadLoader.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\loader-runner\lib\LoaderRunner.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModule.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModuleFactory.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\Compiler.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\webpack.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack-cli\bin\utils\validate-options.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack-cli\bin\utils\convert-argv.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack-cli\bin\cli.js
+- C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\bin\webpack.js
+ babel-loader@9 requires Babel 7.12+ (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (C:\Users\tamee\ror\WeatherForecastApp\node_modules\v8-compile-cache\v8-compile-cache.js:159:20)
+    at Object.<anonymous> (C:\Users\tamee\ror\node_modules\babel-loader\lib\index.js:3:11)
+    at Module._compile (C:\Users\tamee\ror\WeatherForecastApp\node_modules\v8-compile-cache\v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (C:\Users\tamee\ror\WeatherForecastApp\node_modules\v8-compile-cache\v8-compile-cache.js:159:20)
+    at loadLoader (C:\Users\tamee\ror\WeatherForecastApp\node_modules\loader-runner\lib\loadLoader.js:18:17)
+    at iteratePitchingLoaders (C:\Users\tamee\ror\WeatherForecastApp\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (C:\Users\tamee\ror\WeatherForecastApp\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\Compilation.js:739:10)
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\Compilation.js:1111:12
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at eval (eval at create (C:\Users\tamee\ror\WeatherForecastApp\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:14:1)
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:178:9
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:125:7
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:125:7
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:125:7
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:125:7
+    at CaseSensitivePathsPlugin.fileExistsWithCase (C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:95:5)
+    at C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:118:10
+    at CaseSensitivePathsPlugin.getFilenamesInDir (C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:52:5)
+    at CaseSensitivePathsPlugin.fileExistsWithCase (C:\Users\tamee\ror\WeatherForecastApp\node_modules\case-sensitive-paths-webpack-plugin\index.js:101:8)
+
+
+warning ..\package.json: No license field
+
+  Rendered layout layouts/application.html.erb (Duration: 4041.2ms | Allocations: 10578)
+Completed 200 OK in 4071ms (Views: 4055.2ms | ActiveRecord: 0.0ms | Allocations: 13210)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 16:54:52 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms | Allocations: 6777)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:34:in `extract_zip_code'
+app/services/forecast_service.rb:13:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:05:29 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1142)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:34:in `extract_zip_code'
+app/services/forecast_service.rb:13:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:05:32 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 5205)
+Completed 200 OK in 60ms (Views: 58.5ms | Allocations: 5585)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:05:43 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"500024", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1137)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:34:in `extract_zip_code'
+app/services/forecast_service.rb:13:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:06:44 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 5144)
+Completed 200 OK in 56ms (Views: 55.1ms | Allocations: 5640)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:06:49 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 27ms (Allocations: 2054)
+
+
+  
+NoMethodError (undefined method `dig' for "Hyderabad, Telangana, India":String):
+  
+app/services/forecast_service.rb:34:in `extract_zip_code'
+app/services/forecast_service.rb:13:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:09:26 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 5145)
+Completed 200 OK in 64ms (Views: 62.9ms | Allocations: 5637)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:09:35 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"500024", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 23ms (Allocations: 2053)
+
+
+  
+NoMethodError (undefined method `dig' for "500024":String):
+  
+app/services/forecast_service.rb:36:in `extract_zip_code'
+app/services/forecast_service.rb:13:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:11:08 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 5144)
+Completed 200 OK in 74ms (Views: 73.1ms | Allocations: 5636)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:11:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1682)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1746)
+Completed 500 Internal Server Error in 1587ms (Allocations: 3274)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     6: <% end %>
+     7: 
+     8: <% if @forecast_data %>
+     9:   <p><strong>Current Temperature:</strong> <%= @forecast_data['main']['temp'] %> °F</p>
+    10:   <p><strong>High:</strong> <%= @forecast_data['main']['temp_max'] %> °F</p>
+    11:   <p><strong>Low:</strong> <%= @forecast_data['main']['temp_min'] %> °F</p>
+    12: <% else %>
+  
+app/views/forecasts/show.html.erb:9
+app/controllers/forecasts_controller.rb:17:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:14:02 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 5144)
+Completed 200 OK in 61ms (Views: 60.1ms | Allocations: 5635)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:14:43 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 20.0ms | Allocations: 1602)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 1666)
+Completed 500 Internal Server Error in 253ms (Allocations: 8239)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     6: <% end %>
+     7: 
+     8: <% if @forecast_data %>
+     9:   <p><strong>Current Temperature:</strong> <%= @forecast_data['main']['temp'] %> °F</p>
+    10:   <p><strong>High:</strong> <%= @forecast_data['main']['temp_max'] %> °F</p>
+    11:   <p><strong>Low:</strong> <%= @forecast_data['main']['temp_min'] %> °F</p>
+    12: <% else %>
+  
+app/views/forecasts/show.html.erb:9
+app/controllers/forecasts_controller.rb:17:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:16:37 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 5513)
+Completed 200 OK in 67ms (Views: 62.7ms | Allocations: 6016)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:19:52 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1845)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.6ms | Allocations: 8278)
+Completed 200 OK in 119ms (Views: 105.0ms | ActiveRecord: 0.0ms | Allocations: 10967)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:19:57 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"500024", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 4297)
+Completed 200 OK in 912ms (Views: 54.5ms | ActiveRecord: 0.0ms | Allocations: 5749)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:20:14 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 5168)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms | Allocations: 5541)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:20:19 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 4066)
+Completed 200 OK in 780ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 5180)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:21:49 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 90.5ms | Allocations: 8281)
+Completed 200 OK in 114ms (Views: 101.6ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:21:56 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4298)
+Completed 200 OK in 473ms (Views: 54.3ms | ActiveRecord: 0.0ms | Allocations: 5767)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:29:55 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 6911)
+Completed 200 OK in 395ms (Views: 88.8ms | ActiveRecord: 0.0ms | Allocations: 10763)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:29:58 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 5804)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.0ms | Allocations: 6923)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:30:02 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad, Telangana, India", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.4ms | Allocations: 4283)
+Completed 200 OK in 2383ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 5535)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:30:16 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 5170)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms | Allocations: 5548)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:30:22 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"500024", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 4065)
+Completed 200 OK in 371ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 5179)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:32:54 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 5163)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 5535)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:33:27 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 8281)
+Completed 200 OK in 113ms (Views: 97.0ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:33:31 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1646)
+
+
+  
+NoMethodError (undefined method `fetch_by_zip_code' for #<ForecastService:0x000000000d57d840 @address="10001">):
+  
+app/services/forecast_service.rb:22:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:34:35 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.7ms | Allocations: 5173)
+Completed 200 OK in 108ms (Views: 106.7ms | Allocations: 5673)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:34:41 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 4295)
+Completed 200 OK in 720ms (Views: 61.3ms | Allocations: 5926)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:49:41 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.0ms | Allocations: 8281)
+Completed 200 OK in 114ms (Views: 101.3ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:49:45 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2526)
+
+
+  
+NameError (uninitialized constant ForecastService::HTTParty):
+  
+app/services/forecast_service.rb:41:in `retrieve_forecast_from_api'
+app/services/forecast_service.rb:23:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:50:32 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 8281)
+Completed 200 OK in 106ms (Views: 92.3ms | ActiveRecord: 0.0ms | Allocations: 10971)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 17:50:35 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 657ms (ActiveRecord: 0.0ms | Allocations: 2296)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:46:in `handle_response'
+app/services/forecast_service.rb:26:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 17:51:23 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 122.1ms | Allocations: 5203)
+Completed 200 OK in 125ms (Views: 123.5ms | ActiveRecord: 0.0ms | Allocations: 5581)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:45:57 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 650ms (Allocations: 1880)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:46:in `handle_response'
+app/services/forecast_service.rb:26:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:50:03 +0530
+  [1m[35m (19.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 86.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 487.6ms | Allocations: 8281)
+Completed 200 OK in 664ms (Views: 565.1ms | ActiveRecord: 0.0ms | Allocations: 10971)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:50:07 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 136.1ms | Allocations: 1982)
+  Rendered layout layouts/application.html.erb (Duration: 137.6ms | Allocations: 2047)
+Completed 500 Internal Server Error in 621ms (ActiveRecord: 0.0ms | Allocations: 3725)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     6: <% end %>
+     7: 
+     8: <% if @forecast_data %>
+     9:   <p><strong>Current Temperature:</strong> <%= @forecast_data['main']['temp'] %> °F</p>
+    10:   <p><strong>High:</strong> <%= @forecast_data['main']['temp_max'] %> °F</p>
+    11:   <p><strong>Low:</strong> <%= @forecast_data['main']['temp_min'] %> °F</p>
+    12: <% else %>
+  
+app/views/forecasts/show.html.erb:9
+app/controllers/forecasts_controller.rb:21:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:52:49 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 5538)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 6669)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:53:41 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.7ms | Allocations: 8281)
+Completed 200 OK in 122ms (Views: 108.9ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:53:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 16.5ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 4306)
+Completed 200 OK in 545ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 5805)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:54:23 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5171)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 5549)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:54:29 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 4072)
+Completed 200 OK in 640ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 5196)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:55:31 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 5144)
+Completed 200 OK in 56ms (Views: 55.5ms | Allocations: 5636)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:55:32 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 4069)
+Completed 200 OK in 70ms (Views: 47.4ms | Allocations: 4842)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:55:51 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 5163)
+Completed 200 OK in 59ms (Views: 58.2ms | Allocations: 5535)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 18:55:57 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 4075)
+Completed 200 OK in 64ms (Views: 61.6ms | Allocations: 4536)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 18:59:55 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 5142)
+Completed 200 OK in 54ms (Views: 52.5ms | Allocations: 5634)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:00:00 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 4069)
+Completed 200 OK in 90ms (Views: 57.0ms | Allocations: 4853)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:02:08 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 8281)
+Completed 200 OK in 109ms (Views: 95.0ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:02:12 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 0.0ms | Allocations: 2335)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:56:in `handle_response'
+app/services/forecast_service.rb:30:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:02:48 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 5170)
+Completed 200 OK in 61ms (Views: 59.8ms | Allocations: 5670)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:02:50 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 4306)
+Completed 200 OK in 309ms (Views: 62.0ms | Allocations: 6050)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:05:33 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1370)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 122.8ms | Allocations: 5479)
+Completed 200 OK in 134ms (Views: 130.3ms | Allocations: 6596)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:05:49 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms | Allocations: 2124)
+
+
+  
+SyntaxError (C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+					city_name: response['sys'][0]['name']
+					^~~~~~~~~
+C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+				},
+				^
+):
+  
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/controllers/forecasts_controller.rb:8:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:06:51 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.7ms | Allocations: 8098)
+Completed 200 OK in 98ms (Views: 94.6ms | Allocations: 9275)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:06:52 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 18ms (Allocations: 1221)
+
+
+  
+SyntaxError (C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+					city_name: response['sys']['name']
+					^~~~~~~~~
+C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+				},
+				^
+):
+  
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/controllers/forecasts_controller.rb:8:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:06:57 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1241)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 5177)
+Completed 200 OK in 57ms (Views: 56.1ms | Allocations: 5551)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:07:13 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2124)
+
+
+  
+SyntaxError (C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+					city_name: response['sys']['name']
+					^~~~~~~~~
+C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+				},
+				^
+):
+  
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/services/forecast_service.rb:60: syntax error, unexpected local variable or method, expecting '}'
+app/services/forecast_service.rb:61: syntax error, unexpected '}', expecting `end'
+app/controllers/forecasts_controller.rb:8:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:08:57 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.2ms | Allocations: 8282)
+Completed 200 OK in 123ms (Views: 109.0ms | ActiveRecord: 0.0ms | Allocations: 10971)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:09:01 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 22.8ms | Allocations: 294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 4323)
+Completed 200 OK in 607ms (Views: 78.8ms | ActiveRecord: 0.0ms | Allocations: 6164)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:10:58 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 5136)
+Completed 200 OK in 63ms (Views: 62.3ms | Allocations: 5629)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:11:00 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 5163)
+Completed 200 OK in 70ms (Views: 68.9ms | Allocations: 5535)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:11:07 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 4080)
+Completed 200 OK in 81ms (Views: 56.4ms | Allocations: 4860)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:12:02 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 140.0ms | Allocations: 5136)
+Completed 200 OK in 143ms (Views: 141.9ms | Allocations: 5627)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:12:08 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 4075)
+Completed 200 OK in 606ms (Views: 67.6ms | Allocations: 5632)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:16:36 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 5166)
+Completed 200 OK in 58ms (Views: 56.7ms | Allocations: 5543)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:16:38 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 5164)
+Completed 200 OK in 65ms (Views: 63.7ms | Allocations: 5536)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:16:42 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 4062)
+Completed 200 OK in 461ms (Views: 58.1ms | Allocations: 5102)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:17:58 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 5166)
+Completed 200 OK in 78ms (Views: 76.6ms | Allocations: 5538)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:18:01 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX\\", "commit"=>"Get Forecast"}
+Error fetching forecast: invalid zip code
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 4071)
+Completed 200 OK in 479ms (Views: 56.7ms | Allocations: 5130)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:18:04 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 5164)
+Completed 200 OK in 51ms (Views: 50.4ms | Allocations: 5536)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:18:08 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Error fetching forecast: invalid zip code
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 4063)
+Completed 200 OK in 389ms (Views: 57.7ms | Allocations: 5110)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:23:05 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 5141)
+Completed 200 OK in 52ms (Views: 51.5ms | Allocations: 5632)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:23:36 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"100", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.5ms | Allocations: 8233)
+Completed 200 OK in 1811ms (Views: 113.7ms | ActiveRecord: 0.0ms | Allocations: 12056)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:23:45 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 4491)
+Completed 200 OK in 464ms (Views: 71.5ms | ActiveRecord: 0.0ms | Allocations: 6459)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:23:54 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"100", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 5317)
+Completed 200 OK in 553ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 6483)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:24:02 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 5150)
+Completed 200 OK in 557ms (Views: 54.8ms | ActiveRecord: 0.0ms | Allocations: 6195)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:24:50 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 109ms (Allocations: 1906)
+
+
+  
+NameError (undefined local variable or method `zip_code' for #<ForecastService:0x000000000d65c3b0 @address="Houston, TX">):
+  
+app/services/forecast_service.rb:79:in `fetch_zip_code_from_geocoding'
+app/services/forecast_service.rb:74:in `extract_zip_code'
+app/services/forecast_service.rb:14:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:25:30 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"100", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.8ms | Allocations: 8233)
+Completed 200 OK in 677ms (Views: 150.8ms | ActiveRecord: 0.0ms | Allocations: 12027)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:25:33 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 4491)
+Completed 200 OK in 543ms (Views: 87.9ms | ActiveRecord: 0.0ms | Allocations: 6462)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:25:39 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"100", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 5317)
+Completed 200 OK in 489ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 6455)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:25:42 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 5150)
+Completed 200 OK in 437ms (Views: 59.7ms | ActiveRecord: 0.0ms | Allocations: 6165)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:30:06 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.2ms | Allocations: 8233)
+Completed 200 OK in 499ms (Views: 105.0ms | ActiveRecord: 0.0ms | Allocations: 12721)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:30:11 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 4491)
+Completed 200 OK in 553ms (Views: 64.8ms | ActiveRecord: 0.0ms | Allocations: 6464)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:30:36 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 4073)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.0ms | Allocations: 4547)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:30:41 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 5317)
+Completed 200 OK in 303ms (Views: 56.1ms | ActiveRecord: 0.0ms | Allocations: 7108)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:30:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5150)
+Completed 200 OK in 427ms (Views: 53.7ms | ActiveRecord: 0.0ms | Allocations: 6812)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:40:02 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.9ms | Allocations: 6928)
+Completed 200 OK in 1594ms (Views: 113.0ms | ActiveRecord: 0.0ms | Allocations: 11663)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:44:01 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms | Allocations: 2849)
+
+
+  
+NoMethodError (undefined method `is_zip_code?' for #<ForecastService:0x000000000d047038 @address="Houston, TX">):
+  
+app/services/forecast_service.rb:14:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:44:05 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1494)
+
+
+  
+NoMethodError (undefined method `is_zip_code?' for #<ForecastService:0x000000000d6310e8 @address="Houston, TX">):
+  
+app/services/forecast_service.rb:14:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:45:48 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 36ms (Allocations: 1876)
+
+
+  
+NoMethodError (undefined method `extract_zip_code?' for #<ForecastService:0x000000000d2153d8 @address="Houston, TX">
+Did you mean?  extract_zip_code):
+  
+app/services/forecast_service.rb:14:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:45:52 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1499)
+
+
+  
+NoMethodError (undefined method `extract_zip_code?' for #<ForecastService:0x000000000d1cf6d0 @address="Houston, TX">
+Did you mean?  extract_zip_code):
+  
+app/services/forecast_service.rb:14:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/forecasts" for 127.0.0.1 at 2024-11-05 19:46:36 +0530
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/forecasts"):
+  
+Started GET "/forecasts" for 127.0.0.1 at 2024-11-05 19:46:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/forecasts"):
+  
+Started GET "/forecasts" for 127.0.0.1 at 2024-11-05 19:46:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/forecasts"):
+  
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:46:47 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"100", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 8003)
+Completed 200 OK in 1016ms (Views: 93.2ms | ActiveRecord: 0.0ms | Allocations: 11438)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:47:02 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Los Angeles, CA", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 5152)
+Completed 200 OK in 720ms (Views: 57.0ms | ActiveRecord: 0.0ms | Allocations: 6376)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:47:19 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 4311)
+Completed 200 OK in 498ms (Views: 57.7ms | ActiveRecord: 0.0ms | Allocations: 5737)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:48:05 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 4022)
+Completed 200 OK in 80ms (Views: 68.2ms | Allocations: 5063)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:48:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Los Angeles, CA", "commit"=>"Get Forecast"}
+Error fetching forecast: invalid zip code
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 4063)
+Completed 200 OK in 563ms (Views: 68.4ms | Allocations: 5134)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 19:48:33 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 8281)
+Completed 200 OK in 104ms (Views: 91.3ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 19:48:36 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 4322)
+Completed 200 OK in 409ms (Views: 77.7ms | ActiveRecord: 0.0ms | Allocations: 5923)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:06:04 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 174.5ms | Allocations: 8281)
+Completed 200 OK in 201ms (Views: 186.8ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:06:10 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 1079ms (ActiveRecord: 0.0ms | Allocations: 2776)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/services/forecast_service.rb:55:in `[]'
+app/services/forecast_service.rb:55:in `block in extract_zip_code_from_address'
+app/services/forecast_service.rb:55:in `each'
+app/services/forecast_service.rb:55:in `find'
+app/services/forecast_service.rb:55:in `extract_zip_code_from_address'
+app/services/forecast_service.rb:19:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:09:07 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 8281)
+Completed 200 OK in 104ms (Views: 89.0ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:09:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 1015ms (ActiveRecord: 0.0ms | Allocations: 4487)
+
+
+  
+NoMethodError (undefined method `key?' for ["ISO_3166-1_alpha-2", "US"]:Array):
+  
+app/services/forecast_service.rb:60:in `block in extract_zip_code_from_address'
+app/services/forecast_service.rb:60:in `each'
+app/services/forecast_service.rb:60:in `find'
+app/services/forecast_service.rb:60:in `extract_zip_code_from_address'
+app/services/forecast_service.rb:19:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:13:02 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.3ms | Allocations: 8285)
+Completed 200 OK in 113ms (Views: 99.0ms | ActiveRecord: 0.0ms | Allocations: 10983)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:05 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 5156)
+Completed 200 OK in 692ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 7700)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:13 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 5150)
+Completed 200 OK in 771ms (Views: 58.0ms | ActiveRecord: 0.0ms | Allocations: 8243)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:25 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 5150)
+Completed 200 OK in 721ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 7085)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:32 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 4311)
+Completed 200 OK in 229ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 5772)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:40 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.2ms | Allocations: 5156)
+Completed 200 OK in 2196ms (Views: 93.4ms | ActiveRecord: 0.0ms | Allocations: 7099)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:13:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 4063)
+Completed 200 OK in 304ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 5379)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:13:52 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 5164)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 5544)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:15:10 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 90.3ms | Allocations: 8281)
+Completed 200 OK in 115ms (Views: 101.1ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:15:13 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 5156)
+Completed 200 OK in 777ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 7732)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:16:48 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.5ms | Allocations: 8281)
+Completed 200 OK in 118ms (Views: 103.1ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:16:51 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 5157)
+Completed 200 OK in 905ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 8336)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:44:21 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3789)
+
+
+  
+NoMethodError (undefined method `valid_zip_code?' for #<ForecastsController:0x000000000084d0>):
+  
+app/controllers/forecasts_controller.rb:10:in `create'
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:44:26 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2924)
+
+
+  
+NoMethodError (undefined method `valid_zip_code?' for #<ForecastsController:0x00000000008a48>):
+  
+app/controllers/forecasts_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-05 20:46:32 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.1ms | Allocations: 8281)
+Completed 200 OK in 101ms (Views: 89.5ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:46:35 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 5156)
+Completed 200 OK in 1869ms (Views: 56.4ms | ActiveRecord: 0.0ms | Allocations: 8294)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-05 20:52:27 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 3874)
+
+
+  
+NoMethodError (undefined method `fetch_zip_code_data' for #<ForecastsController:0x000000000084d0>
+Did you mean?  fetch_geocode_data):
+  
+app/controllers/forecasts_controller.rb:46:in `fetch_lat_long_by_zip'
+app/controllers/forecasts_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:41:57 +0530
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 49.4ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 268.0ms | Allocations: 8281)
+Completed 200 OK in 372ms (Views: 305.4ms | ActiveRecord: 0.0ms | Allocations: 10979)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:42:03 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3004)
+
+
+  
+NoMethodError (undefined method `fetch_zip_code_data' for #<ForecastsController:0x000000000087f0>
+Did you mean?  fetch_geocode_data):
+  
+app/controllers/forecasts_controller.rb:46:in `fetch_lat_long_by_zip'
+app/controllers/forecasts_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:42:36 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 5170)
+Completed 200 OK in 49ms (Views: 48.8ms | Allocations: 5678)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:42:38 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 4314)
+Completed 200 OK in 228ms (Views: 55.5ms | Allocations: 6056)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:43:10 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 5144)
+Completed 200 OK in 47ms (Views: 46.2ms | Allocations: 5644)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:43:12 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 4062)
+Completed 200 OK in 56ms (Views: 44.3ms | Allocations: 4966)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:43:16 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 5165)
+Completed 200 OK in 53ms (Views: 52.3ms | Allocations: 5550)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:43:22 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4070)
+Completed 200 OK in 179ms (Views: 51.2ms | Allocations: 5287)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:43:29 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 5163)
+Completed 200 OK in 52ms (Views: 51.7ms | Allocations: 5543)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:43:35 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4073)
+Completed 200 OK in 243ms (Views: 49.1ms | Allocations: 5284)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:46:39 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 5632)
+Completed 200 OK in 61ms (Views: 59.7ms | Allocations: 6751)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:46:49 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 4306)
+Completed 200 OK in 54ms (Views: 52.6ms | Allocations: 4905)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:46:52 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 5188)
+Completed 200 OK in 52ms (Views: 51.7ms | Allocations: 5570)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 12:48:50 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 5627)
+Completed 200 OK in 71ms (Views: 69.0ms | Allocations: 6747)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 12:49:10 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4305)
+Completed 200 OK in 54ms (Views: 52.3ms | Allocations: 4905)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:04:33 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 94.3ms | Allocations: 9019)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 137.3ms | Allocations: 13028)
+Completed 200 OK in 150ms (Views: 142.8ms | ActiveRecord: 0.0ms | Allocations: 15726)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:05:05 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 4250)
+Completed 200 OK in 349ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 11387)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:07:26 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 6251)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms | Allocations: 7371)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:07:33 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 11.7ms | Allocations: 362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 4394)
+Completed 200 OK in 207ms (Views: 64.6ms | ActiveRecord: 0.0ms | Allocations: 5731)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:08:09 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1956)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 5798)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 6179)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:08:17 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 4078)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 4551)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:12:36 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 111.9ms | Allocations: 15926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 172.6ms | Allocations: 24636)
+Completed 200 OK in 178ms (Views: 176.7ms | Allocations: 25754)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:12:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 5795)
+Completed 200 OK in 227ms (Views: 64.7ms | Allocations: 7158)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:12:59 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 6620)
+Completed 200 OK in 56ms (Views: 55.0ms | Allocations: 7001)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:18:04 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 6617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 10662)
+Completed 200 OK in 82ms (Views: 75.1ms | ActiveRecord: 0.0ms | Allocations: 13360)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:18:08 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Geocoding error: REQUEST_DENIED
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 6607)
+Completed 200 OK in 301ms (Views: 50.1ms | ActiveRecord: 0.0ms | Allocations: 8859)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:29:18 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2888)
+
+
+  
+NoMethodError (undefined method `encode' for URI:Module):
+  
+app/services/forecast_service.rb:75:in `get_zip_code_from_address'
+app/services/forecast_service.rb:64:in `extract_zip_code'
+app/services/forecast_service.rb:15:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:30:57 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 6637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 10686)
+Completed 200 OK in 86ms (Views: 79.0ms | ActiveRecord: 0.0ms | Allocations: 13384)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:31:00 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 512ms (ActiveRecord: 0.0ms | Allocations: 1862)
+
+
+  
+JSON::ParserError (783: unexpected token at '<html>
+<head>
+<title>Access blocked</title>
+</head>
+<body>
+<h1>Access blocked</h1>
+
+<p>You have been blocked because you have violated the
+<a href="https://operations.osmfoundation.org/policies/nominatim/">usage policy</a>
+of OSM's Nominatim geocoding service. Please be aware that OSM's resources are
+limited and shared between many users. The usage policy is there to ensure that
+the service remains usable for everybody.</p>
+
+<p>Please review the terms and make sure that your
+software adheres to the terms. You should in particular verify that you have set a
+<b>custom HTTP referrer or HTTP user agent</b> that identifies your application, and
+that you are not overusing the service with massive bulk requests.</p>
+
+<p>If you feel that this block is unjustified or remains after you have adopted
+your usage, you may contact the Nominatim system administrator at
+nominatim@openstreetmap.org to have this block lifted.</p>
+</body>
+</head>
+'):
+  
+app/services/forecast_service.rb:81:in `get_zip_code_from_address'
+app/services/forecast_service.rb:65:in `extract_zip_code'
+app/services/forecast_service.rb:16:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:33:57 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2742)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 6672)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 7063)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:34:20 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 474ms (Allocations: 2336)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:96:in `get_zip_code_from_address'
+app/services/forecast_service.rb:65:in `extract_zip_code'
+app/services/forecast_service.rb:16:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:34:55 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2687)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 6611)
+Completed 200 OK in 49ms (Views: 48.5ms | Allocations: 7115)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:34:57 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 486ms (Allocations: 2437)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/forecast_service.rb:100:in `get_zip_code_from_address'
+app/services/forecast_service.rb:65:in `extract_zip_code'
+app/services/forecast_service.rb:16:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:37:25 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2687)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 6611)
+Completed 200 OK in 48ms (Views: 47.7ms | Allocations: 7111)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:37:27 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 5810)
+Completed 200 OK in 768ms (Views: 50.1ms | Allocations: 8254)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:39:53 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 6637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.3ms | Allocations: 10686)
+Completed 200 OK in 83ms (Views: 75.5ms | ActiveRecord: 0.0ms | Allocations: 13384)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:39:57 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 5808)
+Completed 200 OK in 179ms (Views: 50.4ms | ActiveRecord: 0.0ms | Allocations: 7569)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:40:10 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 6633)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:40:16 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"77001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 5519)
+Completed 200 OK in 256ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 6676)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:41:41 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 6600)
+Completed 200 OK in 41ms (Views: 40.4ms | Allocations: 7101)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:41:47 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 13ms (Allocations: 2083)
+
+
+  
+NoMethodError (undefined method `encode' for URI:Module):
+  
+app/services/forecast_service.rb:42:in `retrieve_forecast_from_api'
+app/services/forecast_service.rb:26:in `fetch_forecast'
+app/controllers/forecasts_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:42:40 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 6636)
+Completed 200 OK in 44ms (Views: 43.7ms | Allocations: 7142)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:42:42 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Houston, TX", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 5508)
+Completed 200 OK in 197ms (Views: 50.7ms | Allocations: 7044)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:43:46 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 6598)
+Completed 200 OK in 50ms (Views: 49.9ms | Allocations: 7097)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:43:51 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 5516)
+Completed 200 OK in 239ms (Views: 49.1ms | Allocations: 7061)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:43:53 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 6634)
+Completed 200 OK in 55ms (Views: 54.9ms | Allocations: 7014)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:45:00 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 24.0ms | Allocations: 2933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 7023)
+Completed 200 OK in 69ms (Views: 67.2ms | Allocations: 8142)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:45:20 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 2937)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 7033)
+Completed 200 OK in 69ms (Views: 67.2ms | Allocations: 8152)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:45:24 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 5810)
+Completed 200 OK in 46ms (Views: 45.1ms | Allocations: 6410)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:46:06 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 7017)
+Completed 200 OK in 51ms (Views: 49.4ms | Allocations: 8130)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:46:07 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | Allocations: 5802)
+Completed 200 OK in 67ms (Views: 65.7ms | Allocations: 6400)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:46:23 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 7017)
+Completed 200 OK in 61ms (Views: 59.6ms | Allocations: 8133)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:46:25 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 5798)
+Completed 200 OK in 71ms (Views: 69.5ms | Allocations: 6396)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:48:30 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 6598)
+Completed 200 OK in 52ms (Views: 51.2ms | Allocations: 7097)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:48:31 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 5528)
+Completed 200 OK in 57ms (Views: 45.6ms | Allocations: 6290)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:48:33 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 6639)
+Completed 200 OK in 54ms (Views: 53.5ms | Allocations: 7020)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:48:41 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"90001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 5516)
+Completed 200 OK in 210ms (Views: 52.6ms | Allocations: 6674)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:48:44 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 6627)
+Completed 200 OK in 53ms (Views: 52.8ms | Allocations: 7007)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:51:38 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"400001", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 5508)
+Completed 200 OK in 525ms (Views: 70.9ms | Allocations: 6552)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:52:17 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 6598)
+Completed 200 OK in 65ms (Views: 64.2ms | Allocations: 7097)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:52:20 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"400001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 5517)
+Completed 200 OK in 330ms (Views: 69.4ms | Allocations: 6971)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:52:28 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 6639)
+Completed 200 OK in 59ms (Views: 57.6ms | Allocations: 7020)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:52:33 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Mumbai", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1508)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.4ms | Allocations: 5521)
+Completed 200 OK in 415ms (Views: 57.8ms | Allocations: 6670)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:52:41 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6627)
+Completed 200 OK in 59ms (Views: 57.6ms | Allocations: 7007)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:52:47 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 5517)
+Completed 200 OK in 422ms (Views: 67.9ms | Allocations: 6666)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:53:34 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 6599)
+Completed 200 OK in 61ms (Views: 59.6ms | Allocations: 7098)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:53:36 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 5516)
+Completed 200 OK in 88ms (Views: 64.6ms | Allocations: 6313)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:55:02 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 7036)
+Completed 200 OK in 84ms (Views: 81.2ms | Allocations: 8155)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:55:04 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 67.0ms | Allocations: 4187)
+  Rendered layout layouts/application.html.erb (Duration: 68.1ms | Allocations: 4251)
+Completed 500 Internal Server Error in 74ms (Allocations: 4835)
+
+
+  
+ActionView::Template::Error (undefined method `fahrenheit_to_celsius' for #<ActionView::Base:0x0000000000ef38>):
+     6: <% end %>
+     7: 
+     8: <% if @forecast_data %>
+     9:   <p><strong>Current Temperature:</strong> <%= fahrenheit_to_celsius(@forecast_data[:current_temp]) %> °C</p>
+    10:   <p><strong>High:</strong> <%= fahrenheit_to_celsius(@forecast_data[:high_temp]) %> °C</p>
+    11:   <p><strong>Low:</strong> <%= fahrenheit_to_celsius(@forecast_data[:low_temp]) %> °C</p>
+    12:   <p><strong>Weather Description:</strong> <%= @forecast_data[:weather_description] %></p>
+  
+app/views/forecasts/show.html.erb:9
+app/controllers/forecasts_controller.rb:21:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 13:55:25 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 6647)
+Completed 200 OK in 60ms (Views: 59.2ms | Allocations: 7029)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 13:55:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 3836)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3900)
+Completed 500 Internal Server Error in 131ms (Allocations: 4814)
+
+
+  
+ActionView::Template::Error (undefined method `fahrenheit_to_celsius' for #<ActionView::Base:0x00000000010130>):
+     6: <% end %>
+     7: 
+     8: <% if @forecast_data %>
+     9:   <p><strong>Current Temperature:</strong> <%= fahrenheit_to_celsius(@forecast_data[:current_temp]) %> °C</p>
+    10:   <p><strong>High:</strong> <%= fahrenheit_to_celsius(@forecast_data[:high_temp]) %> °C</p>
+    11:   <p><strong>Low:</strong> <%= fahrenheit_to_celsius(@forecast_data[:low_temp]) %> °C</p>
+    12:   <p><strong>Weather Description:</strong> <%= @forecast_data[:weather_description] %></p>
+  
+app/views/forecasts/show.html.erb:9
+app/controllers/forecasts_controller.rb:21:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:00:17 +0530
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 39.1ms | Allocations: 6637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 10686)
+Completed 200 OK in 121ms (Views: 107.5ms | ActiveRecord: 0.0ms | Allocations: 13384)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:00:25 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 41.2ms | Allocations: 1799)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.9ms | Allocations: 5814)
+Completed 200 OK in 538ms (Views: 98.8ms | ActiveRecord: 0.0ms | Allocations: 7601)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:00:56 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 6633)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:01:02 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"400001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 5519)
+Completed 200 OK in 409ms (Views: 67.4ms | ActiveRecord: 0.0ms | Allocations: 6737)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:01:11 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 6626)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.0ms | Allocations: 7006)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:01:15 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"delhi", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 5516)
+Completed 200 OK in 214ms (Views: 54.3ms | ActiveRecord: 0.0ms | Allocations: 6723)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:01:22 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 6628)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:04:22 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"rajasthan", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 5528)
+Completed 200 OK in 297ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 6760)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:04:29 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 6627)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 7007)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:04:38 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"tamil nadu", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 5519)
+Completed 200 OK in 304ms (Views: 66.5ms | ActiveRecord: 0.0ms | Allocations: 6737)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:04:50 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 6626)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms | Allocations: 7006)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:04:59 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 5516)
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.0ms | Allocations: 5983)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:05:12 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 6626)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms | Allocations: 7006)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:06:11 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 44.0ms | Allocations: 2935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.0ms | Allocations: 7029)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.0ms | Allocations: 8148)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:06:18 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 5797)
+Completed 200 OK in 252ms (Views: 55.8ms | Allocations: 7154)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:06:29 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 6638)
+Completed 200 OK in 62ms (Views: 61.1ms | Allocations: 7020)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:06:39 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Mumbai", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 5537)
+Completed 200 OK in 298ms (Views: 57.4ms | Allocations: 6772)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:07:11 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 7023)
+Completed 200 OK in 72ms (Views: 68.8ms | Allocations: 8142)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:07:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Mumbai", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 35.5ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.5ms | Allocations: 5798)
+Completed 200 OK in 103ms (Views: 101.0ms | Allocations: 6397)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:07:18 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.9ms | Allocations: 6631)
+Completed 200 OK in 66ms (Views: 65.2ms | Allocations: 7012)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:07:33 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"600001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 5516)
+Completed 200 OK in 335ms (Views: 68.6ms | Allocations: 6752)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:07:56 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 6626)
+Completed 200 OK in 58ms (Views: 56.2ms | Allocations: 7006)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:10:18 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 76.9ms | Allocations: 2489)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 131.2ms | Allocations: 6581)
+Completed 200 OK in 143ms (Views: 139.6ms | Allocations: 7711)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:10:26 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 5823)
+Completed 200 OK in 76ms (Views: 64.2ms | Allocations: 6548)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:12:07 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 6230)
+Completed 200 OK in 55ms (Views: 54.2ms | Allocations: 6617)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:12:16 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 66.4ms | Allocations: 2515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 115.7ms | Allocations: 6608)
+Completed 200 OK in 128ms (Views: 124.8ms | Allocations: 7732)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:12:18 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 6219)
+Completed 200 OK in 54ms (Views: 53.3ms | Allocations: 6605)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:12:19 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 6214)
+Completed 200 OK in 61ms (Views: 60.2ms | Allocations: 6599)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:15:10 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 65.5ms | Allocations: 2512)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 119.7ms | Allocations: 6602)
+Completed 200 OK in 150ms (Views: 132.8ms | Allocations: 7720)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:15:13 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 6219)
+Completed 200 OK in 55ms (Views: 53.8ms | Allocations: 6605)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:15:49 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 6601)
+Completed 200 OK in 72ms (Views: 67.9ms | Allocations: 7719)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:15:51 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 6228)
+Completed 200 OK in 63ms (Views: 61.8ms | Allocations: 6614)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:15:52 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2304)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 6227)
+Completed 200 OK in 62ms (Views: 60.1ms | Allocations: 6613)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:16:07 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 124.9ms | Allocations: 6637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 177.8ms | Allocations: 10686)
+Completed 200 OK in 201ms (Views: 187.5ms | ActiveRecord: 0.0ms | Allocations: 13390)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:16:15 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 6611)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.0ms | Allocations: 7736)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:17:58 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 64.6ms | Allocations: 2943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 123.7ms | Allocations: 7034)
+Completed 200 OK in 136ms (Views: 132.7ms | ActiveRecord: 0.0ms | Allocations: 8159)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:18:01 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 5738)
+Completed 200 OK in 480ms (Views: 69.5ms | ActiveRecord: 0.0ms | Allocations: 12899)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:18:31 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 6636)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 7022)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:18:32 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 5519)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.0ms | Allocations: 5990)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:18:35 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 6628)
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:19:57 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 62.4ms | Allocations: 2956)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.4ms | Allocations: 7052)
+Completed 200 OK in 120ms (Views: 116.3ms | ActiveRecord: 0.0ms | Allocations: 8176)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:20:00 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 5797)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 6394)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:20:02 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 6633)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:20:13 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 5516)
+Completed 200 OK in 179ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 6750)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:20:16 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 6628)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:21:55 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 91.9ms | Allocations: 6660)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 144.3ms | Allocations: 10709)
+Completed 200 OK in 167ms (Views: 156.1ms | ActiveRecord: 0.0ms | Allocations: 13413)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:21:59 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 0.0ms | Allocations: 1600)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:22:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 6620)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms | Allocations: 7060)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:24:21 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 71.5ms | Allocations: 6726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.2ms | Allocations: 10775)
+Completed 200 OK in 156ms (Views: 144.0ms | ActiveRecord: 0.0ms | Allocations: 13479)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:25 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:25 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 6653)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms | Allocations: 7042)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:26 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:27 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 6648)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms | Allocations: 7036)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:28 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 438ms (ActiveRecord: 0.0ms | Allocations: 1157)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:29 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 6648)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms | Allocations: 7036)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:29 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"10001", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 353ms (ActiveRecord: 0.0ms | Allocations: 940)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:30 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 6646)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms | Allocations: 7031)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:30 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:30 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 6646)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms | Allocations: 7031)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:38 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2955)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 7051)
+Completed 200 OK in 82ms (Views: 77.7ms | ActiveRecord: 0.0ms | Allocations: 8167)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:24:40 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:24:40 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 6635)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms | Allocations: 7024)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:25:45 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 32.8ms | Allocations: 3003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.2ms | Allocations: 7093)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.0ms | Allocations: 8211)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:12 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 159ms (ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:14 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:26:20 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 7033)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms | Allocations: 8143)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:26:37 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 34.8ms | Allocations: 6656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.2ms | Allocations: 10705)
+Completed 200 OK in 124ms (Views: 110.9ms | ActiveRecord: 0.0ms | Allocations: 13400)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:39 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Redirected to http://127.0.0.1:3000/forecasts/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:26:40 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 6635)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms | Allocations: 7025)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:43 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 273ms (ActiveRecord: 0.0ms | Allocations: 2596)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started GET "/forecasts" for 127.0.0.1 at 2024-11-06 14:26:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/forecasts"):
+  
+Started GET "/forecasts/new" for 127.0.0.1 at 2024-11-06 14:26:54 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 6656)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 7050)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:26:55 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 74.9ms | Allocations: 2718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.0ms | Allocations: 6641)
+Completed 200 OK in 119ms (Views: 118.4ms | ActiveRecord: 0.0ms | Allocations: 7027)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:27:02 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:27:04 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:27:10 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:27:41 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 37.3ms | Allocations: 6656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.2ms | Allocations: 10705)
+Completed 200 OK in 121ms (Views: 109.0ms | ActiveRecord: 0.0ms | Allocations: 13409)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:27:44 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 16ms (ActiveRecord: 0.0ms | Allocations: 1600)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:27:46 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+No template found for ForecastsController#create, rendering head :no_content
+Completed 204 No Content in 364ms (ActiveRecord: 0.0ms | Allocations: 1345)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:28:00 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Hyderabad", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 5815)
+Completed 200 OK in 65ms (Views: 62.0ms | Allocations: 6660)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:28:05 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 6636)
+Completed 200 OK in 66ms (Views: 64.7ms | Allocations: 7022)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:28:08 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"", "commit"=>"Get Forecast"}
+Error fetching forecast: city not found
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1498)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 5512)
+Completed 200 OK in 305ms (Views: 53.4ms | Allocations: 6571)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:28:19 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 6628)
+Completed 200 OK in 64ms (Views: 62.8ms | Allocations: 7013)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:29:19 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Mumbai", "commit"=>"Get Forecast"}
+Completed 500 Internal Server Error in 16ms (Allocations: 1169)
+
+
+  
+SyntaxError (C:/Users/tamee/ror/WeatherForecastApp/app/services/forecast_service.rb:78: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/services/forecast_service.rb:78: syntax error, unexpected end-of-input, expecting `end'
+app/services/forecast_service.rb:78: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/forecasts_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:29:46 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 6676)
+Completed 200 OK in 57ms (Views: 55.4ms | Allocations: 7187)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:29:48 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"Mumbai", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 5516)
+Completed 200 OK in 517ms (Views: 118.7ms | Allocations: 6989)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:29:57 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 6600)
+Completed 200 OK in 57ms (Views: 56.5ms | Allocations: 7104)
+
+
+Started POST "/forecasts" for 127.0.0.1 at 2024-11-06 14:30:08 +0530
+Processing by ForecastsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "address"=>"chennai", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 5519)
+Completed 200 OK in 423ms (Views: 57.3ms | Allocations: 6944)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-06 14:30:11 +0530
+Processing by ForecastsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/new.html.erb within layouts/application
+  Rendered forecasts/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 6637)
+Completed 200 OK in 74ms (Views: 72.7ms | Allocations: 7022)
+
+
